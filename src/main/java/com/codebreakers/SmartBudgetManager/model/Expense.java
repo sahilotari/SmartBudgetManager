@@ -18,6 +18,19 @@ public class Expense {
 
     private String description;
 
+    // Default constructor
+    public Expense() {
+    }
+
+    // Parameterized constructor
+    public Expense(Long id, Double amount, String category, LocalDate date, String description) {
+        this.id = id;
+        this.amount = amount;
+        this.category = category;
+        this.date = date;
+        this.description = description;
+    }
+
     // Getters and Setters
     public Long getId() {
         return id;
